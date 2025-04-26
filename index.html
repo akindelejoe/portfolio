@@ -3,57 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Joe Akindele | Portfolio</title>
-  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <title>Joe Akindele | Fullstack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Joe Akindele</h1>
-    <p>MEAN Fullstack Developer & WordPress Expert</p>
-    <a href="#contact" class="btn">Contact Me</a>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Joe Akindele</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">☰</div>
+      </nav>
+    </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I build dynamic, responsive, and user-friendly websites using the MEAN stack and WordPress.</p>
-    <ul>
-      <li>JavaScript / TypeScript</li>
-      <li>Node.js / Express</li>
-      <li>Angular</li>
-      <li>MongoDB</li>
-      <li>WordPress / Elementor</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Arese fits</h3>
-      <p>An e-commerce website built with WordPress.</p>
-      <a href="https://arese.fit/" target="_blank">View Project</a>
+  <section class="hero">
+    <div class="container">
+      <!-- Typewriter headline -->
+      <h1><span id="typewriter-text"></span><span class="cursor">&nbsp;</span></h1>
+      <a href="#contact" class="btn">Contact</a>
+      <a class="btn resume-btn" href="TheResume.docx" download>Download Resume</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:akindelejoe2020@gmail.com">akindelejoe2020@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/joseph-akindele-187191277/">Joseph Akindele</a></p>
-    <p>GitHub: <a href="https://github.com/akindelejoe">akindelejoe</a></p>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a passionate Fullstack Developer skilled in Angular, Node.js, Express.js, and MongoDB. I love turning complex ideas into beautiful solutions.</p>
   </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Angular, TypeScript</li>
+      <li>Node.js, Express.js</li>
+      <li>MongoDB, Mongoose</li>
+      <li>RESTful APIs</li>
+      <li>SEO Optimization</li>
+      <li>WordPress Development</li>
+      <li>Email Development (Knak, Marketo)</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Angular CRM</h3>
+        <p>Built with Angular, Node.js & MongoDB. Role-based access and real-time dashboard.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>WordPress SEO Site</h3>
+        <p>Optimized WP site using Elementor. 90+ Lighthouse SEO score.</p>
+        <a href="https://arese.fit/" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:akindelejoe2020@gmail.com">akindelejoe2020@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/akindelejoe" target="_blank">akindelejoe</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/akindelejoe" target="_blank">LinkedIn Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Joe Akindele</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
