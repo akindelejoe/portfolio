@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Joe Akindele | Fullstack Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe Akindele | Full Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body>
 
-  <header class="navbar">
-    <div class="container nav-container">
-      <div class="logo">Joe Akindele</div>
+<body>
+  <header>
+  
+
+    <div class="container">
+      <h1 class="logo">Joe Akindele</h1>
       <nav>
+        <div class="menu-toggle">&#9776;</div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="resume/TheResume.docx" download class="btn resume-btn">Download Resume</a></li>
         </ul>
-        <div class="menu-toggle">☰</div>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <!-- Typewriter headline -->
-      <h1><span id="typewriter-text"></span><span class="cursor">&nbsp;</span></h1>
-      <a href="#contact" class="btn">Contact</a>
-      <a class="btn resume-btn" href="TheResume.docx" download>Download Resume</a>
+      <h2 id="typewriter-text"></h2>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact"class="btn">Connect</a>
+      </div>
     </div>
   </section>
 
   <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am a passionate Fullstack Developer skilled in Angular, Node.js, Express.js, and MongoDB. I love turning complex ideas into beautiful solutions.</p>
-  </section>
-
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Angular, TypeScript</li>
-      <li>Node.js, Express.js</li>
-      <li>MongoDB, Mongoose</li>
-      <li>RESTful APIs</li>
-      <li>SEO Optimization</li>
-      <li>WordPress Development</li>
-      <li>Email Development (Knak, Marketo)</li>
-    </ul>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm Joe Akindele, a Full-Stack Developer specializing in the MEAN stack (MongoDB, Express.js, Angular, Node.js) and WordPress.
+        I build responsive, performant, and scalable web applications and websites. Passionate about clean code and solving real-world problems.
+      </p>
+    </div>
   </section>
 
   <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Angular CRM</h3>
-        <p>Built with Angular, Node.js & MongoDB. Role-based access and real-time dashboard.</p>
-        <a href="#" class="btn">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>WordPress SEO Site</h3>
-        <p>Optimized WP site using Elementor. 90+ Lighthouse SEO score.</p>
-        <a href="https://arese.fit/" class="btn">View Project</a>
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>This section is still under construction. Trust me, it’ll be worth the wait!</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://arese.fit/">Arese Fit</a></h3>
+          <p>WordPress-based Business Website with Elementor pagebuilder and WP Bakery.</p>
+        </div>
+       
       </div>
     </div>
   </section>
 
   <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:akindelejoe2020@gmail.com">akindelejoe2020@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/akindelejoe" target="_blank">akindelejoe</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/akindelejoe" target="_blank">LinkedIn Profile</a></p>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:akindelejoe2020@gmail.com">akindelejoe2020@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/akindelejoe" target="_blank" rel="noopener noreferrer">https://github.com/akindelejoe/portfolio.git</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/joseph-akindele-187191277/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/joseph-akindele-187191277/</a></p>
+  </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Joe Akindele</p>
+    <div class="container">
+      <p>&copy; 2025 Joe Akindele. All Rights Reserved.</p>
+    </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -25,8 +25,8 @@ menuToggle.addEventListener('click', () => {
 // Typewriter Effect with Full Sentence Before Deleting
 const typeElement = document.getElementById('typewriter-text');
 const sentences = [
-  "I'm a MEAN Stack, Wordpress Developer.",
-  "I build modern, responsive websites.",
+  "Full-Stack Developer | MEAN Stack & WordPress Specialist",
+  "Building Scalable Web Apps & Custom WordPress Solutions",
   "I love clean, scalable code.",
   "Let's build something great together!"
 ];

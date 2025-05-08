@@ -11,12 +11,24 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #0d1117;
-  color: #e6edf3;
   line-height: 1.6;
+  background: linear-gradient(145deg, #0d1117, #161b22);
+  color: #ffffff;
 }
 
+
+
+
 /* --- NAVBAR --- */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+
 .navbar {
   width: 100%;
   background: #0d1117;
@@ -38,6 +50,12 @@ body {
   font-weight: bold;
   color: #58a6ff;
 }
+
+header {
+  margin: 10px;
+  padding: 10px;
+}
+
 
 .nav-links {
   list-style: none;
@@ -124,11 +142,16 @@ body {
   color: #ffffff;
 }
 
+.hero .btn {
+  margin-right: 1rem;
+}
+
 /* --- SECTIONS --- */
 .section {
   padding: 80px 20px;
   max-width: 1000px;
   margin: 0 auto;
+  margin-bottom: 10px;
   background: #161b22;
   border-radius: 10px;
 }
@@ -177,7 +200,7 @@ footer {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .project-card {
@@ -185,6 +208,7 @@ footer {
   color: #e6edf3;
   border-radius: 10px;
   padding: 1.5rem;
+  margin-bottom: 15px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -199,6 +223,20 @@ footer {
   color: #58a6ff;
 }
 
+.project-card a {
+  text-decoration: none;
+  color: #58a6ff;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #58a6ff;
+}
+#contact a:hover {
+  color:#007BFF
+
+}
+
 /* --- TYPEWRITER CURSOR --- */
 .cursor {
   display: inline-block;
@@ -206,6 +244,7 @@ footer {
   width: 2px;
   animation: blink 0.9s steps(2, start) infinite;
 }
+
 
 @keyframes blink {
   to {
@@ -216,13 +255,23 @@ footer {
 /* --- RESUME BUTTON --- */
 .resume-btn {
   background-color: transparent;
-  color: #58a6ff;
-  border: 2px solid #58a6ff;
+  color: #5798e3;
+  border: 2px solid #3a8be7;
   margin-left: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .resume-btn:hover {
-  background-color: #58a6ff;
+  background: #ffffffc7;
   color: #0d1117;
+}
+/* --- Media Query --- */
+@media (max-width: 768px) {
+  .nav-links li {
+    margin-bottom: 1rem;
+  }
+
+  .nav-links li a {
+    padding: 0.5rem 1rem;
+  }
 }
