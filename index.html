@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,11 +7,12 @@
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
-
 <body>
-  <header>
-  
 
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <header>
     <div class="container">
       <h1 class="logo">Joe Akindele</h1>
       <nav>
@@ -32,7 +32,7 @@
       <h2 id="typewriter-text"></h2>
       <div class="hero-buttons">
         <a href="#projects" class="btn">View Projects</a>
-        <a href="#contact"class="btn">Connect</a>
+        <a href="#contact" class="btn">Connect</a>
       </div>
     </div>
   </section>
@@ -41,8 +41,13 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I'm Joe Akindele, a Full-Stack Developer specializing in the MEAN stack (MongoDB, Express.js, Angular, Node.js) and WordPress.
-        I build responsive, performant, and scalable web applications and websites. Passionate about clean code and solving real-world problems.
+        Hi, I'm Joe Akindele
+A Full-Stack Developer specializing in the MEAN stack (MongoDB, Express.js, Angular, Node.js) and WordPress. I craft responsive, high-performance, and scalable web applications and websites, with a strong focus on clean code and real-world problem-solving.
+I build with SEO and web accessibility in mind, ensuring that every solution is discoverable, inclusive, and user-friendly for all audiences.
+I'm a quick learner who adapts seamlessly to new technologies and project needs. I enjoy working closely with clients to turn ideas into impactful digital experiences, and I thrive in collaborative team environments, bringing positive energy and a solution-oriented mindset to every project.
+Let's build something amazing together.
+        
+        
       </p>
     </div>
   </section>
@@ -52,14 +57,13 @@
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3>Project One</h3>
-          <p>This section is still under construction. Trust me, it’ll be worth the wait!</p>
+          <h3>Under construction</h3>
+          <p>This section is still under construction. Trust me, it'll be worth the wait!</p>
         </div>
         <div class="project-card">
           <h3><a href="https://arese.fit/">Arese Fit</a></h3>
           <p>WordPress-based Business Website with Elementor pagebuilder and WP Bakery.</p>
         </div>
-       
       </div>
     </div>
   </section>
@@ -68,9 +72,9 @@
     <div class="container">
       <h2>Contact Me</h2>
       <p>Email: <a href="mailto:akindelejoe2020@gmail.com">akindelejoe2020@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/akindelejoe" target="_blank" rel="noopener noreferrer">https://github.com/akindelejoe/portfolio.git</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/joseph-akindele-187191277/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/joseph-akindele-187191277/</a></p>
-  </div>
+      <p>GitHub: <a href="https://github.com/akindelejoe" target="_blank">https://github.com/akindelejoe/portfolio.git</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/joseph-akindele-187191277/" target="_blank">https://www.linkedin.com/in/joseph-akindele-187191277/</a></p>
+    </div>
   </section>
 
   <footer>
@@ -78,7 +82,39 @@
       <p>&copy; 2025 Joe Akindele. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#58a6ff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#58a6ff",
+          opacity: 0.2,
+          width: 1
+        },
+        move: { enable: true, speed: 1 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+  
   <script src="script.js"></script>
 </body>
-
 </html>

@@ -30,30 +30,43 @@ const sentences = [
   "I love clean, scalable code.",
   "Let's build something great together!"
 ];
-let sentenceIndex = 0;
+
+let partIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 
-function typeWriter() {
-  const currentSentence = sentences[sentenceIndex];
-  const displayedText = currentSentence.slice(0, charIndex);
-  typeElement.textContent = displayedText;
+function type() {
+  const currentSentence = sentences[partIndex];
+  const plainText = currentSentence.replace(" | ", " | "); // just normalize spacing
+  const currentText = plainText.substring(0, charIndex);
 
-  if (!isDeleting && charIndex < currentSentence.length) {
-    charIndex++;
-    setTimeout(typeWriter, 100);
-  } else if (isDeleting && charIndex > 0) {
-    charIndex--;
-    setTimeout(typeWriter, 50);
+  // Inject styled span for |
+  let displayHTML;
+  if (plainText.includes(" | ") && currentText.includes("|")) {
+    const [before, after] = currentText.split(" | ");
+    displayHTML = `${before}<span class="styled-bar">|</span>${after || ''}`;
   } else {
-    isDeleting = !isDeleting;
-    if (!isDeleting) {
-      sentenceIndex = (sentenceIndex + 1) % sentences.length;
-    }
-    setTimeout(typeWriter, 1500);
+    displayHTML = currentText;
   }
+
+  typeElement.innerHTML = displayHTML;
+
+  if (!isDeleting) {
+    charIndex++;
+    if (charIndex > plainText.length) {
+      isDeleting = true;
+      setTimeout(type, 1500);
+      return;
+    }
+  } else {
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      partIndex = (partIndex + 1) % sentences.length;
+    }
+  }
+
+  setTimeout(type, isDeleting ? 50 : 100);
 }
 
-if (typeElement) {
-  typeWriter();
-}
+type();
