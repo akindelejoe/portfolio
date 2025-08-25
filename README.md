@@ -1,5 +1,5 @@
 # Portfolio
-#  Hi, I’m Joe
+## Hi, I’m Joe
 
 I’m a **Full-Stack Web Developer** passionate about building clean, functional, and user-friendly digital experiences.  
 This portfolio highlights my projects, skills, and growth as a developer.
